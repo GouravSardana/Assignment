@@ -24,3 +24,8 @@ class Upload(TemplateView):
         form.save()
         print(form)
         return render(request, 'index.html')
+
+
+class Content(ListView):
+    template_name = 'content.html'
+    queryset = Disease.objects.all()

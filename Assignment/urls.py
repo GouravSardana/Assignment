@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from medical_detail.views import Homepage, Upload
+from medical_detail.views import Homepage, Upload, Content
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Homepage.as_view(), name='home'),
-    path('upload/',Upload.as_view() )
+    path('upload/',Upload.as_view()),
+    path('content/',Content.as_view()),
 ]

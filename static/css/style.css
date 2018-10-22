@@ -95,3 +95,30 @@ body{
       label{
         color: #29d;
       }
+-------------------
+#icons {
+            color: #29d;
+        }
+
+        #icons a:hover {
+            color: black;
+        }
+       p{
+           font-size: 18px;
+       }
+       .nav{
+        background-color: #29d;
+       }
+       .btn-large{
+           background-color: white;
+           color: #29d;
+           border: 4px solid#29d;;
+           border-radius: 30px;
+       }
+       .btn-large:hover{
+           background-color:#29d;
+           color: white;
+       }
+       h3{
+           border-bottom: 4px solid#29d;
+       }
