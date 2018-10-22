@@ -4,11 +4,9 @@ from django.views.generic import TemplateView, ListView
 from medical_detail.models import Disease
 
 
-class Homepage(ListView):
+class Homepage(TemplateView):
     template_name='index.html'
-    model=Disease
-    queryset=Disease.objects.all()
-    print(queryset)
+
 
 class Upload(TemplateView):
     template_name = 'upload.html'
