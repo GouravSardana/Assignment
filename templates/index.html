@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content%}
+<section class="">
+    <div class="parallax-container">
+      <div class="parallax">
+          {% load static %}
+        <img src="{% static 'images/geometric.jpg' %}" alt="">
+      </div>
+    </div>
+</section>
+  <!--section-->
+<section  class="container">
+<div class="row">
+  <div class="col m8">
+    <h2 id="border-top">Ant Design</h2>
+    <p class="tag-line">A design system with values of Nature and Determinacy for better user experience of enterprise applications</p>
+    <a href="upload" id="btn" class="btn-large">Upload Content</a>
+    <a href="#" id="btn" class="btn-large">View Content</a>
+  </div>
+</div>
+<div class="centering">
+<div class="obstacle">
+</div>
+<div class="moon2">
+  <div class="moon">
+  </div>
+</div>
+</div>
+</section>
+<section>
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="{% static 'images/geometric.jpg' %}" alt="">
+  </div>
+</div>
+</section>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.parallax').parallax();
+    });
+  </script>
+
+{%endblock%}

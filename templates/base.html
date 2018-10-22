@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> </title>
+		{% load staticfiles %}
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<!--Google Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+		<!--ICONS-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+	</head>
+
+	<body class='landing'>
+<!-- Header -->
+			<header>
+                <nav class="nav nav-wrapper">
+                  <div class="container">
+                    <a href="#" class="brand-logo"><i class="fas fa-jedi fa-3x"></i> Ant Design</a>
+                  </div>
+                </nav>
+            </header>
+{% block content %}
+{% endblock %}
+
+
+
+	<!-- Footer -->
+			<footer class="page-footer grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col m6">
+              <h5>About</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna ali</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna ali</p>
+
+            </div>
+
+            <div class="col m4 offset-m2">
+              <h5>Connect</h5>
+              <ul>
+                <li>
+                  <a href="" class="grey-text lighten-4">Instagram</a>
+                </li>
+                <li>
+                  <a href="" class="grey-text lighten-4">Twitter</a>
+                </li>
+                <li>
+                  <a href="" class="grey-text lighten-4">LinkedIn</a>
+                </li>
+                <li>
+                  <a href="" class="grey-text lighten-4">Tmblr</a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <div class="footer-copyright">
+            <div class="container center-align">
+              <p>&copy; 2018 Ant Design</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+	</body>
+</html>

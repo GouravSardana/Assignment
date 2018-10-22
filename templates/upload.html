@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content%}
+<header class="container">
+      <h2>Upload content in the form below.</h2>
+    </header>
+    <section id="" class="section container">
+      <div class="container row">
+        <div id="form" class="col m10">
+          <h3>Upload Content</h3>
+          <form class="white-text" method="post" action="" role="upload">
+              {% csrf_token %}
+            <label for="text"> <b>NAME</b> </label>
+            <input type="text" name="name" value="" placeholder="Enter Your Name">
+            <label for="email"> <b>SYMPTOMS</b> </label>
+            <textarea  name="symptoms" placeholder="Enter Your Description"></textarea>
+            <label for="textarea"> <b>CAUSES</b> </label>
+            <textarea name="causes" placeholder="Enter Your Description"></textarea>
+            <label for="textarea"> <b>DIAGNOSIS</b> </label>
+            <textarea name="diagnosis" placeholder="Enter Your Description"></textarea>
+              <label for="textarea"> <b>TREATMENT</b> </label>
+            <textarea name="treatment" placeholder="Enter Your Description"></textarea>
+              <label for="textarea"> <b>PREVENTION</b> </label>
+            <textarea name="prevention" placeholder="Enter Your Description"></textarea>
+            <br>
+              <input type="submit" id="btn" class="btn btn-large" value="Upload Content">
+          </form>
+        </div>
+      </div>
+    </section>
+{%endblock%}
